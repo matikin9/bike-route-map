@@ -1,7 +1,25 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
-<head></head>
-<body>
-Map!!!
-</body>
+    <head>
+    	<meta charset=utf-8 />
+    	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+        <title>Bike Route Map</title>
+        
+    	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    	<script src="https://use.fontawesome.com/f0c4653cc2.js"></script>
+    	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai:400,800" rel="stylesheet">
+    	
+    	<script src='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js'></script>
+    	<link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.3.1/gpx.min.js"></script>
+    	<script src="js/leaflet.extra-markers.min.js"></script>
+    	
+    	<link href='css/style.css' rel='stylesheet' />
+    	<link rel="stylesheet" href="css/leaflet.extra-markers.min.css">
+    </head>
+    <body>
+        <h1 id="map-title">Bike Route Map<br /><span class="small">by Amy & Nina</span></h1>
+        <div id="map-display"></div>
+        <script src='js/script.js'></script>
+    </body>
 </html>
