@@ -1,3 +1,0 @@
-# Routes
-
-<strong>MAP!!!</strong>
