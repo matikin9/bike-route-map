@@ -5,6 +5,8 @@ Mapping curated bike routes in LA!!!
 _Nina & Amy_ create a map!
 
 ## Log
+_4/15/17_ - Added popups to the route polylines.  Currently it's hardcoded to display the route name straight from the XML.
+
 _4/9/17_ - Added mouseover/mouseout events to gpx.js.  Set default and hover values for weight and opacity.
 
 _4/5/17_ - Found where the default blue polyline color was defined in gpx.js.  Passed in a polyline_options object to make a red line.
