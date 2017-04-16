@@ -285,8 +285,13 @@ L.GPX = L.FeatureGroup.extend({
 
         // add track
         var l = new L.Polyline(coords, options.polyline_options);
+        /* NINA START 4/15/17 - bind popup */
+        l.bindPopup("<div>Route Name: " + this._info.name + "</div>");
+        /* NINA END 4/15/17 */
+        
         this.fire('addline', { line: l })
-        /* NINA START 4/9/17 */
+        
+        /* NINA START 4/9/17 - hover effects */
         l.on('mouseover', function(e) {
           var layer = e.target;
       
@@ -301,9 +306,10 @@ L.GPX = L.FeatureGroup.extend({
       
           layer.setStyle(options.polyline_options);
         });
-        /* NINA END */
+        /* NINA END 4/9/17 */
+        
         layers.push(l);
-
+        
         if (options.marker_options.startIcon || options.marker_options.startIconUrl) {
           // add start pin
           var p = new L.Marker(coords[0], {

@@ -39,6 +39,8 @@ new L.GPX(gpx1,
             startIcon: greenBicycle,
             endIcon: redBicycle
         }
+    }).on('loaded', function(e) {
+      var routeName = e.target.get_name();
     }).addTo(mymap);
     
 new L.GPX(gpx2, 
