@@ -2,7 +2,7 @@
 Mapping curated bike routes in LA - _Nina & Amy_ create a map!  Amy is the cyclist learning tech.  Nina is the techie learning to ride.  We both love maps and created this project as a way for each of us to share our knowledge with the other.  We want this to turn into a useful resource that helps more people ride their bikes in Los Angeles.
 
 ## Log
-_5/8/17_ - Updated README with more information.
+_5/8/17_ - Updated README with more information.  In considering how to load new data and display it on the map, I think we may want to load it directly into Mapbox as a dataset.
 
 _4/15/17_ - Added popups to the route polylines.  Currently it's hardcoded to display the route name straight from the XML.
 
